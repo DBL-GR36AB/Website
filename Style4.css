@@ -1,0 +1,221 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li{
+    float: left;
+}
+a{
+    padding: 20px;
+    width: 150px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#section1{
+    height: 700px;
+    background-image: url(Images1/background.png);
+    display: inline-block;
+    width: 100%;
+}
+#section2{
+    height: 700px;
+    background: #342B4B;
+    display: inline-block;
+    width: 100%;
+}
+#section3{
+    height: 700px;
+    background: #342B4B;
+    display: inline-block;
+    width: 100%;
+}
+#section4{
+    height: 700px;
+    background: #342B4B;
+    display: inline-block;
+    width: 100%;
+}
+#section5{
+    height: 700px;
+    background: #342B4B;
+    display: inline-block;
+    width: 100%;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    color:coral;
+}
+.content h2{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 80px;
+    margin-top: -10px;
+    color:coral;
+}
+.content p{
+    font-size: 20px;
+    color:coral;
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid coral;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: 60px;
+    margin-top: 1px;
+}
+span{
+    background:coral;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #342B4B;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    z-index:1000;
+
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+.navbar ul a{
+    text-decoration: none;
+    color:coral;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: coral;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.square{
+    background-color: coral;
+}
+
+.one{
+    width: 1000px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+}
+
+.container4{
+    display: flex;
+    width: 100%;
+    padding: 4%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.box4{
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    margin-top: 80px;
+}
+.box4>img{
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+.box4:hover{
+    flex: 1 1 50%;
+}
+.box4:hover>img{
+    width: 100%;
+    height: 100%;
+}
+
+.search-form{
+    margin-top: 15px;
+    float: right;
+    margin-right: 100px;
+}
+input[type=text]{
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+}
+button3{
+    float: right;
+    background: coral;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor:pointer;
+    position: relative;
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+}
