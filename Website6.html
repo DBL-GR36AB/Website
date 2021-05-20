@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloud36-visualization</title>
+    <link rel="stylesheet" href="Style6.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Images1/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+            </nav>
+            <img src="Images1/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div id="home">
+            <div class="content">
+                <h1>Cloud36-visualization</h1>
+                <h2>Data vizualization tool</h2>
+                <p>Designed by student project group: Gr36AB.</p>
+                <center><div>
+                    <a href="Website7.html">
+                        <button type="button"><span></span>Tour</button><br>
+                    </a>
+                    <a href="Website7.html">
+                        <button type="button"><span></span>Visualizations</button><br>
+                    </a>
+                </div></center>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="horizontal_slider">
+                <div class="slider_container">
+                    <div class="item">
+                        <div class="img_area"><img src="Images1/Edith.jpg" alt=""></div>
+                        <div class="img_text">
+                            <h1>Edith Gierasimiuk</h1>
+                            <h2>Scrum Master & App Developer</h2>
+                            <p>Edith is a Python programmer with considerable teamwork experience.
+                            <br> She is ready to push herself and the team to produce great results, 
+                            <br> lest they also join her skull collection. 
+                            <br> Edith studies Computer Science and Engineering at TU/e.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_area"><img src="Images1/Marfa.png" alt=""></div>
+                        <div class="img_text">
+                            <h1>Marfa Vinogradova</h1>
+                            <h2>Writer & Learning Programmer</h2>
+                            <p> Marfa has little experience with programming and working in a team,
+                            <br> but she is dedicated to learning to do well at both.
+                            <br> She is responsible for helping her team write the final report.
+                            <br> Marfa studies Computer Science and Engineering at TU/e.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_area"><img src="Images1/Marlou.jpg" alt=""></div>
+                        <div class="img_text">
+                            <h1>Marlou Hoogstraate</h1>
+                            <h2>Website people</h2>
+                            <p> Marlou is part of the website team. 
+                            <br> She doens't have much programming skills yet, 
+                            <br> but shes eager to learn and make a beautiful website.
+                            <br> Marlou studies Computer Science and Engineering at TU/e.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_area"><img src="Images1/Willem.jpg" alt=""></div>
+                        <div class="img_text">
+                            <h1>Willem van den Brink</h1>
+                            <h2>Website people & animal lover</h2>
+                            <p> Willem is working on the website team,
+                            <br> not heaving had much programming experience
+                            <br> he sees chance to improve and learn new stuff.
+                            <br> Willem studies Computer Science an Engineering at TU/e
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_area"><img src="Images1/Nikola.jpg" alt=""></div>
+                        <div class="img_text">
+                            <h1>Nikola Milivojevic</h1>
+                            <h2>Web Person & Professional Procrastinator</h2>
+                            <p> Nikola has worked in the past with several programming languages,
+                            <br> and is dedicated to try solve problems through any means necessary.
+                            <br> He helps.
+                            <br> Nikola studies Computer Science and Engineering at TU/e.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_area"><img src="Images1/Dhruv.jpg" alt=""></div>
+                        <div class="img_text">
+                            <h1>Dhruv Manohar</h1>
+                            <h2>Learning Programmer & Writer</h2>
+                            <p> Dhruv has a minimal programming background,
+                            <br> but is eager to learn and help the team out.     
+                            <br> He also has a background in academic English,
+                            <br> Dhruv studies Computer Science and Engineering at TU/e.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_area"><img src="Images1/Deniz.jpg" alt=""></div>
+                        <div class="img_text">
+                            <h1>Deniz Erim</h1>
+                            <h2>Learning Programmer & Writer</h2>
+                            <p> Deniz is still learning how to code better and efficiently,
+                            <br> however,
+                            <br> with some time and research, he can deliver the product needed. 
+                            <br> Deniz studied Computer Science and Engineering at TU/e.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img_area"><img src="Images1/Daniel.jpg" alt=""></div>
+                        <div class="img_text">
+                            <h1>Daniel Mihaylov</h1>
+                            <h2>Developer team</h2>
+                            <p> Daniel has a solid programming background, 
+                            <br> but nevertheless is eager to learn new things,
+                            <br> and work on new project, with new peoples.
+                            <br> Deniel studied Computer Science and Engineering at TU/e.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="video">
+            <center><iframe src="https://www.youtube.com/embed/67lnjV6SrFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe></center>
+        </div>
+
+    <script>     
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){    
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight ="160px"
+                }
+            else
+                {
+                    menuList.style.maxHeight ="0px"
+                }
+        }
+    </script>
+
+</body>
+</html>
