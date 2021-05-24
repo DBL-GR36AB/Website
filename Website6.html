@@ -4,12 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cloud36-visualization</title>
     <link rel="stylesheet" href="Style6.css">
+    <link rel="stylesheet" href="bootstrap-tour-standalone.min.css" >
+
 </head>
 <body>
     <div class="container">
         <div class="navbar">
             <img src="Images1/logo.png" class="logo">
-            <nav>
+            <nav class="tour-step tour-step-two">
                 <ul id="menuList">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -25,18 +27,18 @@
                 <h2>Data vizualization tool</h2>
                 <p>Designed by student project group: Gr36AB.</p>
                 <center><div>
+                    <a>
+                        <button class="tour_button button tour-step tour-step-one tour-step-six"><span></span>Tour</button><br>
+                      </a>
                     <a href="Website7.html">
-                        <button type="button"><span></span>Tour</button><br>
-                    </a>
-                    <a href="Website7.html">
-                        <button type="button"><span></span>Visualizations</button><br>
+                        <button class="button tour-step tour-step-three"><span></span>Visualizations</button><br>
                     </a>
                 </div></center>
             </div>
         </div>
 
-        <div id="about">
-            <div class="horizontal_slider">
+        <div id="about" >
+            <div class="horizontal_slider tour-step tour-step-four">
                 <div class="slider_container">
                     <div class="item">
                         <div class="img_area"><img src="Images1/Edith.jpg" alt=""></div>
@@ -138,7 +140,7 @@
             </div>
         </div>
     
-        <div id="video">
+        <div id="video" class="tour-step tour-step-five">
             <center><iframe src="https://www.youtube.com/embed/67lnjV6SrFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe></center>
         </div>
@@ -158,5 +160,9 @@
         }
     </script>
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-tour-standalone.min.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
